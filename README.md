@@ -1,4 +1,8 @@
-# amocrm-api
+# API-приложение для доступа к сделкам и контактам amoCRM
+
+## Vue
+
+## UI-kit Antd
 
 ## Project setup
 ```

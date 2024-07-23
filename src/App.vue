@@ -1,27 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Suspense>
+    <ApiAmocrm />
+  </Suspense>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import ApiAmocrm from './components/ApiAmocrm.vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    ApiAmocrm
   }
-});
+})
 </script>
 
 <style>
+html {
+  background: #ececec;
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 34px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 </style>
